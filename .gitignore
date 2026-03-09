@@ -1,0 +1,5 @@
+.env
+config/secret.json
+config/secret.yml
+KREDITKARTEN.txt
+archive/
