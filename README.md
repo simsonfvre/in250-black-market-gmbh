@@ -30,6 +30,7 @@ Dieses Repository enthält:
 Weitere Informationen zum Projekt:
 
 - [Verzeichnisstruktur](docs/01_verzeichnisstruktur.md)
+- [Branching-Strategie](docs/02_branch_strategie.md)
 
 ---
 
