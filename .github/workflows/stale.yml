@@ -1,0 +1,30 @@
+name: Mark and close stale issues and PRs
+
+"on":
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Mark stale issues and pull requests
+        uses: actions/stale@v9
+        with:
+          stale-issue-message: "Dieses Issue wurde 30 Tage lang nicht aktualisiert und wurde deshalb als stale markiert. Wenn es weiterhin relevant ist, kommentiere bitte oder aktualisiere es."
+          stale-pr-message: "Dieser Pull Request wurde 30 Tage lang nicht aktualisiert und wurde deshalb als stale markiert. Wenn er weiterhin relevant ist, kommentiere bitte oder aktualisiere ihn."
+
+          close-issue-message: "Dieses Issue wurde wegen 7 weiterer Tage ohne Aktivität automatisch geschlossen."
+          close-pr-message: "Dieser Pull Request wurde wegen 7 weiterer Tage ohne Aktivität automatisch geschlossen."
+
+          days-before-stale: 30
+          days-before-close: 7
+
+          stale-issue-label: "stale"
+          stale-pr-label: "stale"
