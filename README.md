@@ -31,6 +31,7 @@ Weitere Informationen zum Projekt:
 
 - [Verzeichnisstruktur](docs/01_verzeichnisstruktur.md)
 - [Branching-Strategie](docs/02_branch_strategie.md)
+- [GitHub Page](https://simsonfvre.github.io/in250-black-market-gmbh/)
 
 ---
 
